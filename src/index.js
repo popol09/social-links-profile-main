@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Container from './Components/mySocialLink';
 
-const prutas = ["banana", "saging", "yellow na talong"]
+const App = () => {
+  return (
+    <Container />
+  )
+}
 
-const list = prutas.map((pruta) => <p>{pruta}</p>)
+// Sample Map
+// const prutas = ["banana", "saging", "yellow na talong"];
+// const list = prutas.map((pruta) => <p>{pruta}</p>)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(list);
+root.render(<App />);  
